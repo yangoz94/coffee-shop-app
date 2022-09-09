@@ -1,0 +1,12 @@
+.listItem a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: all 0.2s ease 0.2s;
+  }
+  
+  .listItem a:hover {
+    box-shadow: 0 3px gray;
+  }
+  
