@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+A personal project to improve my React and Javascript skills.
+Estimated completion date of the project : September 21, 2022
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
