@@ -12,8 +12,8 @@ function Navbar(props) {
           return (
             <NavigationItem
               key = {props.items[item].id}
-              link={props.items[item].link}
-              label={props.items[item].label}
+              link= {props.items[item].link}
+              label= {props.items[item].label}
             />
           );
         })}

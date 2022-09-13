@@ -1,7 +1,6 @@
 import classes from "./NavigationItem.module.css";
 import React from "react";
 
-
 function NavigationItem(props) {
   return (
     <li className={classes.listItem}>

@@ -4,6 +4,10 @@ Estimated completion date of the project : September 21, 2022
 
 ![home_page](https://user-images.githubusercontent.com/95255319/189274978-df9c9967-85d0-4c62-874a-f06bba4f96cd.png)
 ![about_page](https://user-images.githubusercontent.com/95255319/189274990-25199eb3-81c9-487a-8894-b01fd819b00c.png)
+![order-page-1](https://user-images.githubusercontent.com/95255319/189838216-f6b48fb6-6f1c-49ec-9def-dc0888b8aef8.png)
+![order-page-2](https://user-images.githubusercontent.com/95255319/189838343-ff5fec49-5499-4180-9cf3-4bc65990323c.png)
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

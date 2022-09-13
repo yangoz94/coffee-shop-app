@@ -24,7 +24,7 @@ function App() {
           item3: { id: generateKey(), label: "order", link: "/order" },
           item4: { id: generateKey(), label: "login", link: "/login" },
           item5: { id: generateKey(), label: "sign up", link: "/signup" },
-          item6: { id: generateKey(), label: "", link: "/signup" },
+          item6: { id: generateKey(), label: "shopping cart", link: "#" },
         }}
       />
       <Routes>
