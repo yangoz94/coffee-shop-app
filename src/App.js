@@ -9,6 +9,9 @@ import Order from "./pages/Order-page/Order";
 import Navbar from "./components/UI/navigation-bar/Navbar";
 
 function App() {
+  const generateKey = () => {
+    return Math.floor(Math.random() * 100000000);
+  };
   return (
     <>
       <Navbar
@@ -16,14 +19,15 @@ function App() {
         alt="coffee company logo"
         header="Princeton Coffee & Roastery"
         items={{
-          item1: { label: "home", link: "/home" },
-          item2: { label: "about", link: "/about" },
-          item3: { label: "order", link: "/order" },
-          item4: { label: "login", link: "/login" },
-          item5: { label: "sign up", link: "/signup" },
+          item1: { id: generateKey(), label: "home", link: "/home" },
+          item2: { id: generateKey(), label: "about", link: "/about" },
+          item3: { id: generateKey(), label: "order", link: "/order" },
+          item4: { id: generateKey(), label: "login", link: "/login" },
+          item5: { id: generateKey(), label: "sign up", link: "/signup" },
+          item6: { id: generateKey(), label: "", link: "/signup" },
         }}
       />
-      <Routes> 
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />

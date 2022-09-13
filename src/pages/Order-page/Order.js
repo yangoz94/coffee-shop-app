@@ -1,13 +1,13 @@
 import React from "react";
 import classes from "./Order.module.css";
+import CoffeeCatalogue from "../../components/UI/Coffee/CoffeeCatalogue/CoffeeCatalogue";
 
 function Order() {
-    return (
-      <div className={classes.Order}>
-        <h1>This is the Order page!</h1>
-      </div>
-    );
+  return (
+    <div className={classes.Order}>
+      <CoffeeCatalogue />
+    </div>
+  );
 }
-
 
 export default Order;

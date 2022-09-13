@@ -1,0 +1,9 @@
+.CoffeeCatalogue {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}

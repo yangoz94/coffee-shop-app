@@ -11,6 +11,7 @@ function Navbar(props) {
         {Object.keys(props.items).map((item) => {
           return (
             <NavigationItem
+              key = {props.items[item].id}
               link={props.items[item].link}
               label={props.items[item].label}
             />

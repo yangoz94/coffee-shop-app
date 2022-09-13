@@ -4,8 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 function Button(props) {
   const navigate = useNavigate();
+  const buttonStyle = {
+    backgroundColor: props.backgroundColor,
+    color: props.color,
+    margin: props.margin,
+  }
   return (
-    <button className={classes.button} onClick={() => navigate(props.onClick)}>
+    <button style = {buttonStyle} className={classes.button} onClick={() => navigate(props.onClick)}>
       {props.label}
     </button>
   );
