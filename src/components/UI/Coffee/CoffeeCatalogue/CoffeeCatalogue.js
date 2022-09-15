@@ -7,7 +7,6 @@ function CoffeeCatalogue() {
 
   const coffeeItems = [
     {
-      id: generateRandomKey(),
       name: "Colombian",
       description:
         "Colombian coffee is a light roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a light roast coffee.",
@@ -16,7 +15,6 @@ function CoffeeCatalogue() {
       alt: "colombian coffee beans",
     },
     {
-      id: generateRandomKey(),
       name: "Ethiopian",
       description:
         "Ethiopian coffee is a medium roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a medium roast coffee.",
@@ -25,7 +23,6 @@ function CoffeeCatalogue() {
       alt: "ethiopian coffee beans",
     },
     {
-      id: generateRandomKey(),
       name: "Guatemala",
       description:
         "Guatemala coffee is a medium-dark roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a medium-dark roast coffee.",
@@ -34,7 +31,6 @@ function CoffeeCatalogue() {
       alt: "guatemala beans",
     },
     {
-      id: generateRandomKey(),
       name: "Mexican",
       description:
         "Mexican coffee is a dark roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a dark roast coffee.",
@@ -43,7 +39,6 @@ function CoffeeCatalogue() {
       alt: "mexican coffee beans",
     },
     {
-      id: generateRandomKey(),
       name: "Kenya",
       description:
         "Kenya coffee is a very dark roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a very dark roast coffee.",
@@ -52,7 +47,6 @@ function CoffeeCatalogue() {
       alt: "kenya coffee beans",
     },
     {
-      id: generateRandomKey(),
       name: "Jamaica Blue Mountain",
       description:
         "Jamaica Blue Mountain coffee is a medium roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a medium roast coffee.",
@@ -66,7 +60,7 @@ function CoffeeCatalogue() {
       {coffeeItems.map((item) => {
         return (
           <CoffeeItem
-            key={item.id}
+            key={generateRandomKey()}
             name={item.name}
             description={item.description}
             price={item.price}

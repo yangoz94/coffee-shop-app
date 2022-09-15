@@ -9,7 +9,7 @@ function Card(props) {
 
   return (
     <div
-      className={classes.card}
+      className={classes.Card}
       style={cardStyle}
     >
       {props.children}

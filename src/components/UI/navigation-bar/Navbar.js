@@ -30,7 +30,7 @@ function Navbar() {
             />
           );
         })}
-          <ShoppingCart/>
+        <ShoppingCart />
       </ul>
     </nav>
   );

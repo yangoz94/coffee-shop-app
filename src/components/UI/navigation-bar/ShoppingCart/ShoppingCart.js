@@ -10,7 +10,7 @@ function ShoppingCart(props) {
         src={require("./shopping_cart.png")}
         alt="shopping cart icon"
       />
-      <img className={classes.cart__item_count} src={require("./1.png")} alt="" />
+      <img className={classes.cart__item_count} src={require("./images/0.png")} alt="number of items in the cart" />
     </Link>
   );
 }

@@ -3,4 +3,6 @@
   margin: 20px auto;
   padding: 0 20px;
   text-align: center;
+  width: 100vw;
+  box-sizing: border-box;
 }

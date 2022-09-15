@@ -7,6 +7,7 @@ import Login from "./pages/Login-page/Login";
 import Signup from "./pages/Signup-page/Signup";
 import Order from "./pages/Order-page/Order";
 import Navbar from "./components/UI/Navigation-bar/Navbar";
+import Footer from "./components/UI/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/order" element={<Order />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </>
   );
 }

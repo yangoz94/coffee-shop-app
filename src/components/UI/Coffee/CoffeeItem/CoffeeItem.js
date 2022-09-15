@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./CoffeeItem.module.css";
-import Button from "../../Button/Button";
+import QuantityUpdateWidget from "../../QuantityUpdateWidget/QuantityUpdateWidget";
 
 function CoffeeItem(props) {
   return (
@@ -12,12 +12,7 @@ function CoffeeItem(props) {
         <h3 className={classes.CoffeeItem__name}>{props.name}</h3>
         <p className={classes.CoffeeItem__desc}>{props.description}</p>
         <p className={classes.CoffeeItem__price}>{props.price}</p>
-        <Button
-          label="Add to Cart"
-          onClick="#"
-     
-          margin="auto auto"
-        />
+        <QuantityUpdateWidget quantity = {0}/>
         <p className={classes.CoffeeItem_reference}>
           Source: https://www.freshroastedcoffee.com/products/
         </p>
