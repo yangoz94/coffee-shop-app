@@ -1,10 +1,11 @@
 import classes from "./NavigationItem.module.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NavigationItem(props) {
   return (
     <li className={classes.listItem}>
-      <a href={props.link}>{props.label}</a>
+      <Link to={props.link}>{props.label}</Link>
     </li>
   );
 }

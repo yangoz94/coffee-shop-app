@@ -1,22 +1,36 @@
 import React from "react";
 import classes from "./Navbar.module.css";
 import NavigationItem from "./NavigationItem";
+import ShoppingCart from "./ShoppingCart/ShoppingCart";
+import { generateRandomKey } from "../../UtilityFunctions/UtilityFunctions";
 
-function Navbar(props) {
+function Navbar() {
+  const items = {
+    home: { label: "home", link: "/home" },
+    about: { label: "about", link: "/about" },
+    order: { label: "order", link: "/order" },
+    login: { label: "login", link: "/login" },
+    signup: { label: "sign up", link: "/signup" },
+  };
   return (
     <nav className={classes.navbar}>
-      <img src={require("" + props.logo)} alt={props.alt} />
-      <h1>{props.header}</h1>
+      <img
+        className={classes.logo}
+        src={require("./logo.png")}
+        alt="coffee company logo"
+      />
+      <h1>Princeton Coffee & Roastery</h1>
       <ul className={classes.navlinks}>
-        {Object.keys(props.items).map((item) => {
+        {Object.keys(items).map((item) => {
           return (
             <NavigationItem
-              key = {props.items[item].id}
-              link= {props.items[item].link}
-              label= {props.items[item].label}
+              key={generateRandomKey()}
+              link={items[item].link}
+              label={items[item].label}
             />
           );
         })}
+          <ShoppingCart/>
       </ul>
     </nav>
   );

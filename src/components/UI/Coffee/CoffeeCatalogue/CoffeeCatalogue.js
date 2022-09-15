@@ -1,11 +1,9 @@
 import React from "react";
 import classes from "./CoffeeCatalogue.module.css";
 import CoffeeItem from "../CoffeeItem/CoffeeItem";
+import { generateRandomKey } from "../../../UtilityFunctions/UtilityFunctions";
 
 function CoffeeCatalogue() {
-   const generateRandomKey = () => {
-    return Math.floor(Math.random() * 100000000);
-  };
 
   const coffeeItems = [
     {

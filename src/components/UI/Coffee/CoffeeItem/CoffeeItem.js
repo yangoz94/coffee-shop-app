@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./CoffeeItem.module.css";
-import Button from "../../button/Button";
+import Button from "../../Button/Button";
 
 function CoffeeItem(props) {
   return (
