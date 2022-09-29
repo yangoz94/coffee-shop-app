@@ -48,4 +48,33 @@
   text-align: center;
 }
 
+.QuantityUpdateWidget {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.QuantityUpdateWidget__button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ccc;
+  text-align: center;
+  line-height: 30px;
+}
+
+.QuantityUpdateWidget__button:active {
+    background-color: black;
+    color: #fff;
+}
+
 

@@ -1,26 +1,32 @@
-.Footer { 
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    height: 100px;
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  color: black;
+  text-align: center;
+  transition: all 0.5s ease;
+  transition-delay: 0.2s;
 }
 
-.Footer__contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem;
-    column-gap: 60px;
+.Footer p {
+  width: fit-content;
 }
 
-
-.Footer__disclaimer {
-    font-size: 1rem;
-    margin: 0;
-    padding: 10px 0;
-
+.Footer:hover {
+  background-color: black;
+  color: white;
 }
+
+@media screen and (max-width: 767px) {
+  .Footer {
+    flex-direction: column;
+    height: fit-content;
+    padding: 0;
+  }
+}
+    
+

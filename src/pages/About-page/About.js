@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./About.module.css";
-import Card from "../../components/UI/Card/Card";
+import Footer from "../../components/UI/Footer/Footer";
 
 function About() {
   return (
     <div className={classes.about}>
-      <Card backgroundImage={require("./about.webp")}>
+      <div className={classes.about__div}>
         <h1>Our Heritage</h1>
         <p>
           Our Heritage Our story begins in 1991 along the cobblestone streets of
@@ -43,7 +43,8 @@ function About() {
             ***Image has been taken from the internet and is not owned by me
           </span>
         </p>
-      </Card>
+      </div>
+    <Footer/>
     </div>
   );
 }

@@ -49,7 +49,7 @@ function CoffeeCatalogue() {
     {
       name: "Jamaica Blue Mountain",
       description:
-        "Jamaica Blue Mountain coffee is a medium roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a medium roast coffee.",
+        "Jamaica B. M. coffee is a medium roast coffee with a smooth, rich flavor and a hint of chocolate. It is a popular choice for those who prefer a medium roast coffee.",
       price: "$29.99",
       image: "images/jamaica.webp",
       alt: "jamaican coffee beans",
