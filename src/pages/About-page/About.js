@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./About.module.css";
-import Footer from "../../components/UI/Footer/Footer";
 
 function About() {
   return (
@@ -44,7 +43,6 @@ function About() {
           </span>
         </p>
       </div>
-    <Footer/>
     </div>
   );
 }

@@ -1,16 +1,18 @@
-import { Store } from "react-notifications-component";
+import { ReactNotifications, Store } from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
+import "animate.css";
 
 function addItemToCartNotification(itemName) {
   Store.addNotification({
     title: "Added to cart",
     message: `WOOHHOO, ${itemName} has been added to your cart!`,
-    type: "info", // Don't like success color
+    type: "info", // Not a fan of success message color
     insert: "top",
     container: "bottom-left",
-    animationIn: ["animate__animated", "animate__fadeIn"],
-    animationOut: ["animate__animated", "animate__fadeOut"],
+    animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
+    animationOut: ['animate__animated animate__zoomOut'],
     dismiss: {
-      duration: 2000,
+      duration: 1000,
       onScreen: true,
     },
   });
@@ -23,8 +25,24 @@ function removeItemFromCartNotification(itemName) {
     type: "danger",
     insert: "top",
     container: "bottom-left",
-    animationIn: ["animated", "fadeIn"],
-    animationOut: ["animated", "fadeOut"],
+    animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
+    animationOut: ['animate__animated animate__zoomOut'],
+    dismiss: {
+      duration: 1000,
+      onScreen: true,
+    },
+  });
+}
+
+function clearCartNotification() {
+  Store.addNotification({
+    title: "Cart cleared",
+    message: "Your cart has been cleared",
+    type: "danger",
+    insert: "top",
+    container: "bottom-left",
+    animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
+    animationOut: ['animate__animated animate__zoomOut'],
     dismiss: {
       duration: 2000,
       onScreen: true,
@@ -32,4 +50,4 @@ function removeItemFromCartNotification(itemName) {
   });
 }
 
-export { addItemToCartNotification, removeItemFromCartNotification };
+export { addItemToCartNotification, removeItemFromCartNotification, clearCartNotification };

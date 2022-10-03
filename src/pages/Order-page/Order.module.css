@@ -6,3 +6,20 @@
   width: 100vw;
   box-sizing: border-box;
 }
+
+.Order_buttons {
+    display: block;
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .Order_buttons button {
+    display: inline-block;
+    margin: 10px 0;
+    border: 0.5px solid gray;
+    width: 320px;
+  }
+
+
+
