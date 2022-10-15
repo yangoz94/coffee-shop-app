@@ -8,11 +8,11 @@ function addItemToCartNotification(itemName) {
     message: `WOOHHOO, ${itemName} has been added to your cart!`,
     type: "info", // Not a fan of success message color
     insert: "top",
-    container: "bottom-left",
+    container: "bottom-right",
     animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
     animationOut: ['animate__animated animate__zoomOut'],
     dismiss: {
-      duration: 1000,
+      duration: 1500,
       onScreen: true,
     },
   });
@@ -28,7 +28,7 @@ function removeItemFromCartNotification(itemName) {
     animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
     animationOut: ['animate__animated animate__zoomOut'],
     dismiss: {
-      duration: 1000,
+      duration: 1500,
       onScreen: true,
     },
   });
@@ -40,7 +40,7 @@ function clearCartNotification() {
     message: "Your cart has been cleared",
     type: "danger",
     insert: "top",
-    container: "bottom-left",
+    container: "top-center",
     animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
     animationOut: ['animate__animated animate__zoomOut'],
     dismiss: {

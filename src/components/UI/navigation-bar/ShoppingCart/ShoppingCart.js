@@ -1,9 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
+import { useContext } from "react";
 import classes from "./ShoppingCart.module.css";
 import { Link } from "react-router-dom";
+import { ShoppingCartContext } from "../../../../contexts/ShoppingCartContext";
 
 function ShoppingCart() {
+  // Required indirectly for the number of total items in the shopping cart. Otherwise, the number of total items will not be updated in the cart.
+  const {shoppingCartItems} = useContext(ShoppingCartContext);
+  // Render the icon corresponding to the number of total items in the shopping cart.
   const numOfItemsInCart = localStorage.getItem("shoppingCartItems") ? JSON.parse(localStorage.getItem("shoppingCartItems")).length : 0;
   useEffect(() => {
     const updateNumOfItemsInCart = () => {
@@ -24,7 +29,7 @@ function ShoppingCart() {
     updateNumOfItemsInCart();
   }, [numOfItemsInCart]);
   return (
-    <Link to="#">
+    <Link to="/products/checkout">
       <img
         className={classes.cart__image}
         src={require("./images/shopping_cart.png")}

@@ -6,10 +6,10 @@ import { ReactNotifications } from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import Home from "./pages/Home-page/Home.js";
 import About from "./pages/About-page/About.js";
-import Login from "./pages/Login-page/Login";
-import Signup from "./pages/Signup-page/Signup";
-import Order from "./pages/Order-page/Order";
+import Products from "./pages/Products-page/Products";
 import Navbar from "./components/UI/Navigation-bar/Navbar";
+import Checkout from "./pages/Products-page/Checkout-page/Checkout";
+import OrderDetails from "./pages/OrderDetails-page/OrderDetails";
 
 
 function App() {
@@ -21,9 +21,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/order" element={<Order />} />
+          <Route path="/products"> 
+            <Route index element={<Products />} />
+            <Route path="checkout" element={<Checkout />} />
+              <Route path="checkout/orderDetails" element={<OrderDetails />} />
+          </Route>
           <Route path="/about" element={<About />} />
         </Routes>
       </ShoppingCartProvider>

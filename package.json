@@ -9,6 +9,8 @@
     "animate.css": "^4.1.1",
     "futura-font": "^1.0.0",
     "node-sass": "^7.0.1",
+    "path": "^0.12.7",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-notifications-component": "^4.0.1",

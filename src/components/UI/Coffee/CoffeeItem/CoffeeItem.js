@@ -10,8 +10,12 @@ function CoffeeItem(props) {
  // We use incrementQuantity function to increment the quantity state by 1 both in the UI and in the localStorage
 
   const incrementQuantity = () => {
-    setQuantity(quantity + 1);
+    // Increment the quantity state by 1 in the UI and localStorage. 
+    setQuantity(prevQuantity => prevQuantity + 1);
     localStorage.setItem(props.name, quantity + 1);
+    // It is important to use state variable here as well as localStorage because we need to update the UI and localStorage at the same time.
+    // Otherwise, inconsistencies will occur in certain user actions.
+
     setShoppingCartItems([
       ...shoppingCartItems,
       {
@@ -27,33 +31,30 @@ function CoffeeItem(props) {
       image: props.image,
       price: props.price,
     },]));
-
     addItemToCartNotification(props.name);
   };
 // We use decrementQuantity function to decrement the quantity state by 1 both in the UI and in the localStorage
   const decrementQuantity = () => {
     if (quantity > 0) {
-      setQuantity(quantity - 1)
+      setQuantity(prevQuantity => prevQuantity - 1);
       localStorage.setItem(props.name, quantity - 1)
-      if (localStorage.getItem(props.name) === "0") {
-        localStorage.removeItem(props.name);
-      }
-    } else {
-      setQuantity(0)
     }
+    localStorage.getItem(props.name) === "0" ? localStorage.removeItem(props.name) : setQuantity(0);
+    // Find the index of the item in the shoppingCartItems array to filter
     if ( shoppingCartItems.filter((item) => item.name === props.name).length > 0 ) {
       const filter_index = shoppingCartItems.findIndex(
         (item) => item.name === props.name
       );
+    // Apply the same filter to shoppingCartItems array to sync.
       setShoppingCartItems(
         shoppingCartItems.filter((item, i) => i !== filter_index)
       );
+    // Update the localStorage
       localStorage.setItem("shoppingCartItems", JSON.stringify(shoppingCartItems.filter((item, i) => i !== filter_index)));
       removeItemFromCartNotification(props.name);
     }
-    if (localStorage.getItem("shoppingCartItems") === "[]") {
-      localStorage.removeItem("shoppingCartItems");
-    }
+    // Clear the localStorage if the shoppingCartItems array is empty instead of leaving it as [null].
+    localStorage.getItem("shoppingCartItems") === "[]" && localStorage.removeItem("shoppingCartItems");
   };
 
   return (

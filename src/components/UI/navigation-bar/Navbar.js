@@ -3,17 +3,13 @@ import classes from "./Navbar.module.css";
 import NavigationItem from "./NavigationItem";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import { generateRandomKey } from "../../UtilityFunctions/UtilityFunctions";
-import { useContext } from "react";
-import { ShoppingCartContext } from "../../../contexts/ShoppingCartContext";
+
 
 function Navbar() {
-  const {shoppingCartItems, setShoppingCartItems} = useContext(ShoppingCartContext);
   const items = {
     home: { label: "home", link: "/home" },
     about: { label: "about", link: "/about" },
-    order: { label: "order", link: "/order" },
-    login: { label: "login", link: "/login" },
-    signup: { label: "sign up", link: "/signup" },
+    products: { label: "products", link: "/products" },
   };
   return (
     <nav className={classes.navbar}>

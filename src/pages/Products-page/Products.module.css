@@ -1,4 +1,4 @@
-.Order {
+.Products {
   display: block;
   margin: 20px auto;
   padding: 0 20px;
@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-.Order_buttons {
+.Products_buttons {
     display: block;
     width: 100%;
 
     margin: 0 auto;
   }
 
-  .Order_buttons button {
+  .Products_buttons button {
     display: inline-block;
     margin: 10px 0;
     border: 0.5px solid gray;
