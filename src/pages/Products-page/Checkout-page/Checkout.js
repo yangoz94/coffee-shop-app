@@ -56,7 +56,7 @@ function Checkout() {
             price={"$" + calculateTotalPrice()}
           />
           <Button label="Edit Your Order" width= "80%" margin = "20px auto" backgroundColor = "darkgray" onClick={() => navigate("/products")} />
-          <Button label="Proceed to Shipping & Payment" width= "80%" margin = "20px auto" backgroundColor = "gray" onClick={() => navigate("/products/checkout/orderDetails")} />
+          <Button label="Proceed to Shipping & Payment" width= "80%" margin = "20px auto" backgroundColor = "darkgray" onClick={() => navigate("/products/checkout/orderDetails")} />
         </>
       )
     } else {
@@ -73,4 +73,4 @@ function Checkout() {
     </div>
   );
 }
-export default Checkout;
+export  default Checkout;

@@ -1,40 +1,45 @@
-
 .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60vw;
-    margin: 1vh auto;
-    background-color: gray;
-    border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  margin: 5vh auto;
+  background-color: brown;
+  border-radius: 20px;
 }
 
 .form__header {
-    width: 80%;
-    display: flex;;
-    flex-direction: column;
-    margin: 2vh auto;
-    color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh auto;
+  color: white;
+  text-align: center;
 }
 
 .form__elements {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form__elements input {
-    width: 80%;
-    height: 50px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 0 10px;
-    font-size: 1.25rem;
+  width: 80%;
+  height: 50px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1.25rem;
 }
 
-.form__elements:last-of-type {
-   margin-bottom: 2vh;
+#submitButton {
+  background: #0c0;
+}
+
+input:disabled {
+  color: black;
+  font-size: 1.4rem;
 }

@@ -10,7 +10,7 @@ import { clearCartNotification } from "../../components/Notifications/Notificati
 function Order() {
   const navigate = useNavigate();
   const {setShoppingCartItems} = useContext(ShoppingCartContext);
-  const [AreButtonsDisplayed, setAreButtonsDisplayed] = useState(false);
+  const [areButtonsDisplayed, setAreButtonsDisplayed] = useState(false);
 
   const checkOutButtonHandler = () => {
     navigate("/products/checkout");
@@ -35,7 +35,7 @@ function Order() {
       <div>
         <CoffeeCatalogue />
       </div>
-      {AreButtonsDisplayed && (
+      {areButtonsDisplayed && (
         <div className={classes.Products_buttons}>
           <div className={classes.Products_buttons__checkout}>
             <Button label="Checkout" onClick={checkOutButtonHandler} />

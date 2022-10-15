@@ -1,0 +1,22 @@
+.OrderConfirmation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  height: calc(100vh - 100px );
+}
+
+.OrderConfirmation__content {
+    background-color: red;
+    align-items: center;
+}
+
+.OrderConfirmation__content p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.OrderConfirmation__content h1 {
+    font-size: 2rem;
+    text-align: center;
+}

@@ -14,6 +14,7 @@ function Button(props) {
       style={buttonStyle}
       className={classes.button}
       onClick={props.onClick}
+      type = {props.type}
     >
       {props.label}
     </button>

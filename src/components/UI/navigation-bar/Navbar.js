@@ -4,13 +4,14 @@ import NavigationItem from "./NavigationItem";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import { generateRandomKey } from "../../UtilityFunctions/UtilityFunctions";
 
-
 function Navbar() {
+
   const items = {
     home: { label: "home", link: "/home" },
     about: { label: "about", link: "/about" },
     products: { label: "products", link: "/products" },
   };
+
   return (
     <nav className={classes.navbar}>
       <img
