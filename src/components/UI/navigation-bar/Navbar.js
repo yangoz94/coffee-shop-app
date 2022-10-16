@@ -6,12 +6,13 @@ import { generateRandomKey } from "../../UtilityFunctions/UtilityFunctions";
 import { useState } from "react";
 
 function Navbar() {
-
+  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
   const items = {
     home: { label: "home", link: "/home" },
     about: { label: "about", link: "/about" },
     products: { label: "products", link: "/products" },
   };
+
 
 
   return (
@@ -32,6 +33,14 @@ function Navbar() {
             />
           );
         })}
+         <div className={classes.hamburger}>
+            <a href="" className={classes.hamburger__nav}>
+              <div className={`${classes.hamburger__nav__line} ${classes.line1}`}></div>
+              <div className={`${classes.hamburger__nav__line} ${classes.line2}`}></div>
+              <div className={`${classes.hamburger__nav__line} ${classes.line3}`}></div>
+            </a>
+          </div>
+        <div className={classes.slider}></div>
         <ShoppingCart />
       </ul>
     </nav>

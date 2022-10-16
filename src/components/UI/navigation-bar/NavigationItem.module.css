@@ -9,4 +9,10 @@
   .listItem a:hover {
     box-shadow: 0 3px gray;
   }
+
+  @media all and (max-width: 1024px) {
+    .listItem  a {
+      display: none;
+    }
+  }
   

@@ -29,6 +29,7 @@ function ShoppingCart() {
     updateNumOfItemsInCart();
   }, [numOfItemsInCart]);
   return (
+    <div className={classes.cart}>
     <Link to="/products/checkout">
       <img
         className={classes.cart__image}
@@ -41,6 +42,7 @@ function ShoppingCart() {
         alt="number of items in the cart"
       />
     </Link>
+  </div>
   );
 }
 
