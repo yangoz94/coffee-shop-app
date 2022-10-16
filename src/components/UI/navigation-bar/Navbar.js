@@ -3,6 +3,7 @@ import classes from "./Navbar.module.css";
 import NavigationItem from "./NavigationItem";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import { generateRandomKey } from "../../UtilityFunctions/UtilityFunctions";
+import { useState } from "react";
 
 function Navbar() {
 
@@ -11,6 +12,7 @@ function Navbar() {
     about: { label: "about", link: "/about" },
     products: { label: "products", link: "/products" },
   };
+
 
   return (
     <nav className={classes.navbar}>

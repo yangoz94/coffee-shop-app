@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-A personal project to improve my React and Javascript skills.
+A personal project to improve my React and Javascript skills.\
+
 Note: Firestore API is set to allow public read & write requests. Do not submit any personal or sensitive information.
 
 ![coffee-app-demo](https://user-images.githubusercontent.com/95255319/196019448-25bda046-9437-4778-8f0a-27523cf227bc.gif)
@@ -11,6 +12,7 @@ Note: Firestore API is set to allow public read & write requests. Do not submit 
 ![Screen Shot 2022-10-16 at 12 49 34 AM](https://user-images.githubusercontent.com/95255319/196019054-45a9c513-104a-476d-a3a1-ef7314dbd2ca.png)
 ![Screen Shot 2022-10-16 at 12 51 08 AM](https://user-images.githubusercontent.com/95255319/196019061-21256579-e49c-4c24-9e5a-4cb07f4f377b.png)
 ![Screen Shot 2022-10-16 at 12 52 48 AM](https://user-images.githubusercontent.com/95255319/196019067-f36b7f3c-e127-4d1e-8a57-93a8d6dcf71d.png)
+![Screen Shot 2022-10-16 at 1 26 07 AM](https://user-images.githubusercontent.com/95255319/196019663-23812205-8bea-4337-9c6d-15605f4e8eef.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
