@@ -19,7 +19,7 @@ function Navbar() {
         src={require("./logo.png")}
         alt="coffee company logo"
       />
-      <h1>Princeton Coffee & Roastery</h1>
+      <h1>Foggy Bottom Coffee & Roastery</h1>
       <ul className={classes.navlinks}>
         {Object.keys(items).map((item) => {
           return (

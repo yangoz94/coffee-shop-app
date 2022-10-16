@@ -3,6 +3,8 @@ import classes from "./Checkout.module.css";
 import ShoppingCartSummaryItem from "../../../components/ShoppingCartSummaryItem/ShoppingCartSummaryItem";
 import Button from "../../../components/UI/Button/Button";
 import { useNavigate } from "react-router-dom";
+import {generateRandomKey} from "../../../components/UtilityFunctions/UtilityFunctions";
+
 
 function Checkout() {
   // Step 0 : Create a navigate function using the useNavigate hook
@@ -21,18 +23,19 @@ function Checkout() {
   // Step 3: Process the data to be displayed in the summary
   const mapSummaryItems = () => {
     const itemsMapped = [];
-    return cartData.map((item) => {
+    return (cartData.map((item) => {
       if (!itemsMapped.includes(item.name)) {
         itemsMapped.push(item.name);
         return (
           <ShoppingCartSummaryItem
+            key={generateRandomKey()}
             name={item.name}
             quantity={cartData.filter((item2) => item2.name === item.name).length}
             price={ "$" + (parseFloat(item.price.replace("$", "")) * cartData.filter((item2) => item2.name === item.name).length).toFixed(2)}
           />
         );
       }
-    });
+    }));
   };
 // Step 4: Render the items in the summary and the total price using the previously defined functions
   const renderSummaryItems = () => {
@@ -43,6 +46,7 @@ function Checkout() {
            <h1>Order Summary</h1> 
           </div>
            <ShoppingCartSummaryItem
+            key={generateRandomKey()}
             name="Product"
             quantity="Quantity"
             price="Price"
@@ -51,6 +55,7 @@ function Checkout() {
           />
           {mapSummaryItems()}
           <ShoppingCartSummaryItem
+            key={generateRandomKey()}
             name="TOTAL"
             quantity={cartData.length + " package(s)"}
             price={"$" + calculateTotalPrice()}

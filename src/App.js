@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
-import { useState } from "react";
 import { ShoppingCartProvider } from "./contexts/ShoppingCartContext";
 import { ReactNotifications } from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";

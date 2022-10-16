@@ -8,7 +8,7 @@ function addItemToCartNotification(itemName) {
     message: `WOOHHOO, ${itemName} has been added to your cart!`,
     type: "info", // Not a fan of success message color
     insert: "top",
-    container: "bottom-right",
+    container: "top-right",
     animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
     animationOut: ['animate__animated animate__zoomOut'],
     dismiss: {
@@ -24,7 +24,7 @@ function removeItemFromCartNotification(itemName) {
     message: `NOOOOOOOOOO, ${itemName} has been removed from your cart`,
     type: "danger",
     insert: "top",
-    container: "bottom-left",
+    container: "top-left",
     animationIn: ['animate__animated animate__bounceIn'], // `animate.css v4` classes
     animationOut: ['animate__animated animate__zoomOut'],
     dismiss: {

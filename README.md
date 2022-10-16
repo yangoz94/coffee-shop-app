@@ -1,13 +1,16 @@
 # Getting Started with Create React App
 A personal project to improve my React and Javascript skills.
-Estimated completion date of the project : September 21, 2022
+Note: Firestore API is set to allow public read & write requests. Do not submit any personal or sensitive information.
 
-![home_page](https://user-images.githubusercontent.com/95255319/189274978-df9c9967-85d0-4c62-874a-f06bba4f96cd.png)
-![about_page](https://user-images.githubusercontent.com/95255319/189274990-25199eb3-81c9-487a-8894-b01fd819b00c.png)
-![order-page-1](https://user-images.githubusercontent.com/95255319/189838216-f6b48fb6-6f1c-49ec-9def-dc0888b8aef8.png)
-![order-page-2](https://user-images.githubusercontent.com/95255319/189838343-ff5fec49-5499-4180-9cf3-4bc65990323c.png)
-
-
+https://user-images.githubusercontent.com/95255319/196019087-9684cf9e-dcde-4a74-9d4f-5c7d125892cb.mov
+![Screen Shot 2022-10-16 at 12 47 19 AM](https://user-images.githubusercontent.com/95255319/196019020-a363e55d-ba76-4625-b3a7-fda12cf36c2c.png)
+![Screen Shot 2022-10-16 at 12 47 34 AM](https://user-images.githubusercontent.com/95255319/196019022-6877c8c6-51ec-4800-94b8-3d106d70c8db.png)
+![Screen Shot 2022-10-16 at 12 47 46 AM](https://user-images.githubusercontent.com/95255319/196019033-4476d970-22cc-46eb-81f8-474704118ced.png)
+![Screen Shot 2022-10-16 at 12 53 13 AM](https://user-images.githubusercontent.com/95255319/196019039-b5adc632-be4d-419e-a50f-281c9b98a884.png)
+![Screen Shot 2022-10-16 at 12 48 37 AM](https://user-images.githubusercontent.com/95255319/196019046-a5d441d3-e704-4691-9385-baa83b6bfaa5.png)
+![Screen Shot 2022-10-16 at 12 49 34 AM](https://user-images.githubusercontent.com/95255319/196019054-45a9c513-104a-476d-a3a1-ef7314dbd2ca.png)
+![Screen Shot 2022-10-16 at 12 51 08 AM](https://user-images.githubusercontent.com/95255319/196019061-21256579-e49c-4c24-9e5a-4cb07f4f377b.png)
+![Screen Shot 2022-10-16 at 12 52 48 AM](https://user-images.githubusercontent.com/95255319/196019067-f36b7f3c-e127-4d1e-8a57-93a8d6dcf71d.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

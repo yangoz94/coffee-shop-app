@@ -11,7 +11,7 @@ function Home() {
         <h1>
           Delicious Coffee <br></br> Roasted with Care
         </h1>
-        <Button label="Shop Now" onClick={() => navigate("/order")} />
+        <Button label="Shop Now" onClick={() => navigate("/products")} />
       </div>
     </div>
   );
