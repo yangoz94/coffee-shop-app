@@ -2,7 +2,7 @@
 A personal project to improve my React and Javascript skills.
 Note: Firestore API is set to allow public read & write requests. Do not submit any personal or sensitive information.
 
-https://user-images.githubusercontent.com/95255319/196019087-9684cf9e-dcde-4a74-9d4f-5c7d125892cb.mov
+![coffee-app-demo](https://user-images.githubusercontent.com/95255319/196019448-25bda046-9437-4778-8f0a-27523cf227bc.gif)
 ![Screen Shot 2022-10-16 at 12 47 19 AM](https://user-images.githubusercontent.com/95255319/196019020-a363e55d-ba76-4625-b3a7-fda12cf36c2c.png)
 ![Screen Shot 2022-10-16 at 12 47 34 AM](https://user-images.githubusercontent.com/95255319/196019022-6877c8c6-51ec-4800-94b8-3d106d70c8db.png)
 ![Screen Shot 2022-10-16 at 12 47 46 AM](https://user-images.githubusercontent.com/95255319/196019033-4476d970-22cc-46eb-81f8-474704118ced.png)
