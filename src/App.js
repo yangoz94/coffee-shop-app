@@ -14,6 +14,7 @@ import OrderConfirmation from "./pages/OrderConfirmation-page/OrderConfirmation"
 import NotFound from "./pages/NotFound-page/NotFound";
 
 function App() {
+
   return (
     <>
       <ShoppingCartProvider>

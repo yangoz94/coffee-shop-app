@@ -1,5 +1,4 @@
 {
-  "homepage": "https://yangoz94.github.io/coffee-shop-app",
   "name": "coffee-shop-app",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +14,7 @@
     "path": "^0.12.7",
     "path-browserify": "^1.0.1",
     "react": "^18.2.0",
+    "react-div-100vh": "^0.7.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.37.0",
     "react-notifications-component": "^4.0.1",
@@ -24,8 +24,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
