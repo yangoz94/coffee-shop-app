@@ -62,8 +62,9 @@ function Checkout() {
             price={"$" + calculateTotalPrice()}
             backgroundColor="#142d4c"
           />
-          <Button label="Edit Your Order" width= "90%" margin = "20px auto" backgroundColor = "darkgray" onClick={() => navigate("/products")} />
           <Button label="Proceed" width= "90%" margin = "20px auto" backgroundColor = "darkgray" onClick={() => navigate("/products/checkout/orderDetails")} />
+          <Button label="Edit Your Order" width= "90%" margin = "20px auto 30px auto" backgroundColor = "darkgray" onClick={() => navigate("/products")} />
+
         </>
       )
     } else {

@@ -7,7 +7,9 @@ function Home() {
   const navigate = useNavigate();
   return (
       <div className={classes.coffeeContainer}>
-        <h1> Delicious Coffee <br></br> Roasted with Care </h1>
+        <div className={classes.coffeeMottoContainer}>
+          <h1> Delicious Coffee <br></br> Roasted with Care </h1>
+        </div>
         <Button label="Shop Now" onClick={() => navigate("/products")} />
       </div>
   );

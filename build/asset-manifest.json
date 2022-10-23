@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a4a2d09.css",
-    "main.js": "/static/js/main.62c2b13a.js",
+    "main.css": "/static/css/main.47213696.css",
+    "main.js": "/static/js/main.5379cfb3.js",
     "static/js/787.6980b358.chunk.js": "/static/js/787.6980b358.chunk.js",
     "static/media/latte.webp": "/static/media/latte.d34b945dd914f0170659.webp",
     "static/media/about.webp": "/static/media/about.06d84f17aa7839b6a3f4.webp",
@@ -14,12 +14,12 @@
     "static/media/kenya.webp": "/static/media/kenya.d532614923c033870bfc.webp",
     "static/media/coffee-house.png": "/static/media/coffee-house.21f76cca76b0d52419fc.png",
     "index.html": "/index.html",
-    "main.6a4a2d09.css.map": "/static/css/main.6a4a2d09.css.map",
-    "main.62c2b13a.js.map": "/static/js/main.62c2b13a.js.map",
+    "main.47213696.css.map": "/static/css/main.47213696.css.map",
+    "main.5379cfb3.js.map": "/static/js/main.5379cfb3.js.map",
     "787.6980b358.chunk.js.map": "/static/js/787.6980b358.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a4a2d09.css",
-    "static/js/main.62c2b13a.js"
+    "static/css/main.47213696.css",
+    "static/js/main.5379cfb3.js"
   ]
 }

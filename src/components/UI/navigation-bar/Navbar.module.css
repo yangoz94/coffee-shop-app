@@ -43,6 +43,7 @@
 }
 
 @media all and (max-width: 1024px) {
+
   .navbar h1 {
     display: none;
   }

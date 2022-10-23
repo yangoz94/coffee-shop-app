@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./Navbar.module.css";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
-import { generateRandomKey } from "../../UtilityFunctions/UtilityFunctions";
-import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
 import { Link } from "react-router-dom";
 
@@ -25,9 +23,9 @@ function Navbar() {
         <li className={classes.listItem}>
           <Link to="/products">products</Link>
         </li>
-          <HamburgerMenu />
-          <ShoppingCart />
       </ul>
+      <HamburgerMenu />
+      <ShoppingCart />
     </nav>
   );
 }

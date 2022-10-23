@@ -42,7 +42,6 @@
   .line3 {
     width: 23px;
   }
-
   
   .slider {
     display: none;
@@ -61,15 +60,15 @@
   }
 
   @media all and (max-width: 1024px) {
-    .hamburger{
+    .hamburger {
       display: block;
+      position: absolute;
+      right: 80px;
     }
 
-  
     .hamburger__nav__line {
       height: 3px;
     }
-
 
     .slider {
         display: block;
@@ -84,7 +83,10 @@
         height: 80%;
         list-style: none;
         z-index: 6;
-        row-gap: 100px;
+    }
+
+    .listItem {
+        margin: 40px 0;
     }
 
     .listItem a {

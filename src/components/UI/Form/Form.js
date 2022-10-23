@@ -105,8 +105,8 @@ function Form(props) {
       <Button
         type="submit"
         label="Complete Purchase"
-        width="80%"
-        margin="15px auto"
+        width="90%"
+        margin="15px auto 30px auto"
         backgroundColor="darkgray"
       ></Button>
     </form>
