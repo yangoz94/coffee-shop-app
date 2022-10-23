@@ -34,8 +34,8 @@
 
 @media all and (max-width: 1440px) {
   .about { 
-    background-image: url("about_mobile.jpg");
-    background-size: auto;
+    background-color: white;
+    background-image: none;
   }
 
   .about p, span {

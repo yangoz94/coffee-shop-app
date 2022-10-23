@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0640563b.css",
+    "main.js": "/static/js/main.ec29f469.js",
+    "static/js/787.6980b358.chunk.js": "/static/js/787.6980b358.chunk.js",
+    "static/media/latte.webp": "/static/media/latte.d34b945dd914f0170659.webp",
+    "static/media/about.webp": "/static/media/about.06d84f17aa7839b6a3f4.webp",
+    "static/media/about_mobile.jpg": "/static/media/about_mobile.24ae1e92e308e4c805a4.jpg",
+    "static/media/logo.png": "/static/media/logo.904b42561e16fadca325.png",
+    "static/media/mexican.webp": "/static/media/mexican.f6cd5195b61dcdad3bae.webp",
+    "static/media/ethiopian.webp": "/static/media/ethiopian.999275a82548989d4449.webp",
+    "static/media/guatemala.webp": "/static/media/guatemala.09777ed535e8171c105d.webp",
+    "static/media/jamaica.webp": "/static/media/jamaica.7f704ca5d3c6830b3fbe.webp",
+    "static/media/colombian.webp": "/static/media/colombian.7196900f774380414023.webp",
+    "static/media/kenya.webp": "/static/media/kenya.d532614923c033870bfc.webp",
+    "static/media/coffee-house.png": "/static/media/coffee-house.21f76cca76b0d52419fc.png",
+    "index.html": "/index.html",
+    "main.0640563b.css.map": "/static/css/main.0640563b.css.map",
+    "main.ec29f469.js.map": "/static/js/main.ec29f469.js.map",
+    "787.6980b358.chunk.js.map": "/static/js/787.6980b358.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0640563b.css",
+    "static/js/main.ec29f469.js"
+  ]
+}
