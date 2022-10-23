@@ -1,7 +1,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);/* 100px is the height of the header  + 50 px is the height of the footer*/
+  height: calc(100vh - 100px);
   background-image: url("about.webp");
   background-size: cover;
   background-position: center;
@@ -22,7 +22,8 @@
   margin: 20px 0;
 }
 
-.about p, span {
+.about p,
+span {
   width: 58%;
   text-align: justify;
   font-size: 1.1rem;
@@ -33,12 +34,13 @@
 }
 
 @media all and (max-width: 1440px) {
-  .about { 
+  .about {
     background-color: white;
     background-image: none;
   }
 
-  .about p, span {
+  .about p,
+  span {
     width: 100%;
   }
 
