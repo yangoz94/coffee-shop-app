@@ -29,73 +29,31 @@
   align-self: center;
 }
 
-.hamburger {
-  display: none;
-  align-self: center;
+.listItem a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.2s ease 0.2s;
+  z-index: 5;
 }
 
-.hamburger__nav {
-  width: 30px;
-  margin: auto auto;
-}
-
-.hamburger__nav:hover {
-  cursor: pointer;
-}
-
-.hamburger__nav:hover .line1 {
-  transform: rotate(1turn);
-  width: 25px;
-}
-.hamburger__nav:hover .line2 {
-  transform: rotate(1turn);
-  width: 20px;
-}
-.hamburger__nav:hover .line3 {
-  transform: rotate(1turn);
-  width: 15px;
-}
-
-.hamburger__nav__line {
-  font-weight: 300;
-  align-self: center;
-  margin-left: auto;
-  background-color: black;
-  margin: 5px 0;
-  border-radius: 25px;
-  transition: 0.4s ;
-  width: 30px;
-}
-
-.slider {
-  position: fixed;
-  top: 100vh;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
+.listItem a:hover {
+  box-shadow: 0 3px gray;
 }
 
 @media all and (max-width: 1024px) {
-
   .navbar h1 {
     display: none;
   }
-  
+
+  .listItem  a {
+    display: none;
+  }
+
   .logo {
     position: absolute;
     left: 0%;
     top: -10px;
   }
-
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger__nav__line {
-    height: 3px;
-  }
-
 }
-

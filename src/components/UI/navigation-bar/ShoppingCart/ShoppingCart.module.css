@@ -1,7 +1,6 @@
 .cart__image {
     width: 36px;
     height: 36px;
-
 }
 
 .cart__item_count {
@@ -11,13 +10,8 @@
 }
 
 @media all and (max-width: 1024px) {
-    .cart__item_count {
-        position: absolute;
-        top: 42px;
-    }
-
     .cart {
-        padding-right: 18px;
+        margin-top: 5px;
     }
 }
     

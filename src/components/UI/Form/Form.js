@@ -45,6 +45,7 @@ function Form(props) {
       <div className={classes.form__header}>
         <h1>Shipping & Payment Details</h1>
       </div>
+      {/* Form elements can also be written with map() function. */}
       <div className={classes.form__elements}>
         <input
           {...register("fullName", { required: true })}
@@ -106,7 +107,7 @@ function Form(props) {
         label="Complete Purchase"
         width="80%"
         margin="15px auto"
-        backgroundColor="red"
+        backgroundColor="darkgray"
       ></Button>
     </form>
   );

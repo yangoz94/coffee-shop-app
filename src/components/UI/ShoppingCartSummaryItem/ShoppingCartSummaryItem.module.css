@@ -28,9 +28,16 @@
     height: 100%;
     background-color: lav;
     font-size: 1.5rem;
-    background-color: brown;
+    background-color: #385170;
     color: white;
     text-align: center;
 }
+
+@media all and (max-width: 1024px) {
+    .SummaryItem__info__divs {
+        font-size: 1.2rem;
+    }
+}
+
 
 

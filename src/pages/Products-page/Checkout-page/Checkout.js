@@ -1,10 +1,9 @@
 import React from "react";
 import classes from "./Checkout.module.css";
-import ShoppingCartSummaryItem from "../../../components/ShoppingCartSummaryItem/ShoppingCartSummaryItem";
+import ShoppingCartSummaryItem from "../../../components/UI/ShoppingCartSummaryItem/ShoppingCartSummaryItem";
 import Button from "../../../components/UI/Button/Button";
 import { useNavigate } from "react-router-dom";
 import {generateRandomKey} from "../../../components/UtilityFunctions/UtilityFunctions";
-
 
 function Checkout() {
   // Step 0 : Create a navigate function using the useNavigate hook
@@ -23,6 +22,7 @@ function Checkout() {
   // Step 3: Process the data to be displayed in the summary
   const mapSummaryItems = () => {
     const itemsMapped = [];
+    // eslint-disable-next-line
     return (cartData.map((item) => {
       if (!itemsMapped.includes(item.name)) {
         itemsMapped.push(item.name);
@@ -44,21 +44,23 @@ function Checkout() {
         <>
         <div className={classes.order_summary}>
            <h1>Order Summary</h1> 
-          </div>
+        </div>
+        {/* Headers of the Table */}
            <ShoppingCartSummaryItem
             key={generateRandomKey()}
-            name="Product"
-            quantity="Quantity"
-            price="Price"
-            backgroundColor="salmon"
-            color="black"
+            name="PRODUCT"
+            quantity="QUANTITY"
+            price="PRICE"
           />
+        {/* List of Items in the Order */}
           {mapSummaryItems()}
+        {/* Total */}
           <ShoppingCartSummaryItem
             key={generateRandomKey()}
             name="TOTAL"
-            quantity={cartData.length + " package(s)"}
+            quantity={cartData.length}
             price={"$" + calculateTotalPrice()}
+            backgroundColor="#142d4c"
           />
           <Button label="Edit Your Order" width= "80%" margin = "20px auto" backgroundColor = "darkgray" onClick={() => navigate("/products")} />
           <Button label="Proceed to Shipping & Payment" width= "80%" margin = "20px auto" backgroundColor = "darkgray" onClick={() => navigate("/products/checkout/orderDetails")} />

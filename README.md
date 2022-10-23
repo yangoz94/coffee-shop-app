@@ -3,15 +3,34 @@ A personal project to improve my React and Javascript skills.\
 
 Note: Firestore API is set to allow public read & write requests. Do not submit any personal or sensitive information.
 
+# A Quick Video Demonstration / Demo
 ![coffee-app-demo](https://user-images.githubusercontent.com/95255319/196019448-25bda046-9437-4778-8f0a-27523cf227bc.gif)
+
+# Home / Landing Page
 ![Screen Shot 2022-10-16 at 12 47 19 AM](https://user-images.githubusercontent.com/95255319/196019020-a363e55d-ba76-4625-b3a7-fda12cf36c2c.png)
+
+# About Page
 ![Screen Shot 2022-10-16 at 12 47 34 AM](https://user-images.githubusercontent.com/95255319/196019022-6877c8c6-51ec-4800-94b8-3d106d70c8db.png)
+
+# Products Page
 ![Screen Shot 2022-10-16 at 12 47 46 AM](https://user-images.githubusercontent.com/95255319/196019033-4476d970-22cc-46eb-81f8-474704118ced.png)
+
+# Shopping Cart / Checkout Page - Empty
 ![Screen Shot 2022-10-16 at 12 53 13 AM](https://user-images.githubusercontent.com/95255319/196019039-b5adc632-be4d-419e-a50f-281c9b98a884.png)
+
+# Checkout and Clear Cart Options
 ![Screen Shot 2022-10-16 at 12 48 37 AM](https://user-images.githubusercontent.com/95255319/196019046-a5d441d3-e704-4691-9385-baa83b6bfaa5.png)
-![Screen Shot 2022-10-16 at 12 49 34 AM](https://user-images.githubusercontent.com/95255319/196019054-45a9c513-104a-476d-a3a1-ef7314dbd2ca.png)
-![Screen Shot 2022-10-16 at 12 51 08 AM](https://user-images.githubusercontent.com/95255319/196019061-21256579-e49c-4c24-9e5a-4cb07f4f377b.png)
+
+# Shopping Cart / Checkout Page
+![Screen Shot 2022-10-22 at 8 33 19 PM](https://user-images.githubusercontent.com/95255319/197367511-b1889c33-1619-4902-85d8-3b38ff5f4306.png)
+
+# Order Details Page
+![Screen Shot 2022-10-22 at 8 41 20 PM](https://user-images.githubusercontent.com/95255319/197367730-9b87fac1-8332-480e-8b8a-d83cdfc77bed.png)
+
+# Order Confirmation & Thank You Page
 ![Screen Shot 2022-10-16 at 12 52 48 AM](https://user-images.githubusercontent.com/95255319/196019067-f36b7f3c-e127-4d1e-8a57-93a8d6dcf71d.png)
+
+# Database Snapshot of the Purchased Items
 ![Screen Shot 2022-10-16 at 1 26 07 AM](https://user-images.githubusercontent.com/95255319/196019663-23812205-8bea-4337-9c6d-15605f4e8eef.png)
 
 

@@ -1,20 +1,12 @@
 import React from "react";
 import classes from "./Navbar.module.css";
-import NavigationItem from "./NavigationItem";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import { generateRandomKey } from "../../UtilityFunctions/UtilityFunctions";
 import { useState } from "react";
+import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
-  const items = {
-    home: { label: "home", link: "/home" },
-    about: { label: "about", link: "/about" },
-    products: { label: "products", link: "/products" },
-  };
-
-
-
   return (
     <nav className={classes.navbar}>
       <img
@@ -24,24 +16,17 @@ function Navbar() {
       />
       <h1>Foggy Bottom Coffee & Roastery</h1>
       <ul className={classes.navlinks}>
-        {Object.keys(items).map((item) => {
-          return (
-            <NavigationItem
-              key={generateRandomKey()}
-              link={items[item].link}
-              label={items[item].label}
-            />
-          );
-        })}
-         <div className={classes.hamburger}>
-            <a href="" className={classes.hamburger__nav}>
-              <div className={`${classes.hamburger__nav__line} ${classes.line1}`}></div>
-              <div className={`${classes.hamburger__nav__line} ${classes.line2}`}></div>
-              <div className={`${classes.hamburger__nav__line} ${classes.line3}`}></div>
-            </a>
-          </div>
-        <div className={classes.slider}></div>
-        <ShoppingCart />
+        <li className={classes.listItem}>
+          <Link to="/home">home</Link>
+        </li>
+        <li className={classes.listItem}>
+          <Link to="/about">about</Link>
+        </li>
+        <li className={classes.listItem}>
+          <Link to="/products">products</Link>
+        </li>
+          <HamburgerMenu />
+          <ShoppingCart />
       </ul>
     </nav>
   );
