@@ -3,6 +3,9 @@ A personal project to improve my React and Javascript skills.\
 
 Note: Firestore API is set to allow public read & write requests. Do not submit any personal or sensitive information.
 
+# Live Link
+https://coffee-shop-app-a3c67.web.app/
+
 # A Quick Video Demonstration / Demo
 ![coffee-app](https://user-images.githubusercontent.com/95255319/197367991-784d1413-51f1-495b-9944-b182399213f0.gif)
 
