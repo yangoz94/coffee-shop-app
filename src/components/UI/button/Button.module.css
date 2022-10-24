@@ -19,8 +19,8 @@
     font-size: 1.75rem;
     color: white;
 }
-
-@media screen and (max-width: 1024px) {
+/* This is due to a bug in Create App React. Button text colors are not being applied correctly in some browsers.*/
+@media screen and (min-width: 1px) {
   .button {
     color: black;
     background-color: white;
