@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: calc(100% - 100px);
+  min-height: 500px;
   margin: 0 auto;
   background-image: url("./latte.webp");
   background-size: cover;
