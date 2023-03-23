@@ -1,3 +1,6 @@
 node_modules
 .firebase
 .github
+src/firebase
+firebase
+
